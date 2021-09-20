@@ -33,8 +33,6 @@ namespace Wonderprises
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.expenseDetailsLabel = new System.Windows.Forms.Label();
-            this.categoriesLabel = new System.Windows.Forms.Label();
-            this.categoriesComboBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.logout = new System.Windows.Forms.Label();
             this.expenseLabel = new System.Windows.Forms.Label();
@@ -42,9 +40,7 @@ namespace Wonderprises
             this.dashboardLabel = new System.Windows.Forms.Label();
             this.appTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
-            this.expenseNameLabel = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.PictureBox();
-            this.incomeNameTextBox = new System.Windows.Forms.TextBox();
             this.incomeLabel2 = new System.Windows.Forms.Label();
             this.addExpenseBtn = new System.Windows.Forms.Button();
             this.expenseGridView = new System.Windows.Forms.DataGridView();
@@ -57,31 +53,12 @@ namespace Wonderprises
             // expenseDetailsLabel
             // 
             this.expenseDetailsLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.expenseDetailsLabel.Location = new System.Drawing.Point(401, 72);
+            this.expenseDetailsLabel.Location = new System.Drawing.Point(401, 100);
             this.expenseDetailsLabel.Name = "expenseDetailsLabel";
             this.expenseDetailsLabel.Size = new System.Drawing.Size(135, 18);
             this.expenseDetailsLabel.TabIndex = 47;
             this.expenseDetailsLabel.Text = "EXPENSE DETAILS";
             this.expenseDetailsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // categoriesLabel
-            // 
-            this.categoriesLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoriesLabel.Location = new System.Drawing.Point(495, 93);
-            this.categoriesLabel.Name = "categoriesLabel";
-            this.categoriesLabel.Size = new System.Drawing.Size(119, 18);
-            this.categoriesLabel.TabIndex = 46;
-            this.categoriesLabel.Text = "CATEGORIES:";
-            this.categoriesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // categoriesComboBox
-            // 
-            this.categoriesComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoriesComboBox.FormattingEnabled = true;
-            this.categoriesComboBox.Location = new System.Drawing.Point(495, 112);
-            this.categoriesComboBox.Name = "categoriesComboBox";
-            this.categoriesComboBox.Size = new System.Drawing.Size(200, 24);
-            this.categoriesComboBox.TabIndex = 45;
             // 
             // panel1
             // 
@@ -163,16 +140,6 @@ namespace Wonderprises
             this.icon.TabIndex = 1;
             this.icon.TabStop = false;
             // 
-            // expenseNameLabel
-            // 
-            this.expenseNameLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.expenseNameLabel.Location = new System.Drawing.Point(248, 93);
-            this.expenseNameLabel.Name = "expenseNameLabel";
-            this.expenseNameLabel.Size = new System.Drawing.Size(119, 18);
-            this.expenseNameLabel.TabIndex = 40;
-            this.expenseNameLabel.Text = "EXPENSE NAME:";
-            this.expenseNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // closeButton
             // 
             this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
@@ -183,14 +150,6 @@ namespace Wonderprises
             this.closeButton.TabIndex = 42;
             this.closeButton.TabStop = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // incomeNameTextBox
-            // 
-            this.incomeNameTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incomeNameTextBox.Location = new System.Drawing.Point(248, 114);
-            this.incomeNameTextBox.Name = "incomeNameTextBox";
-            this.incomeNameTextBox.Size = new System.Drawing.Size(200, 21);
-            this.incomeNameTextBox.TabIndex = 44;
             // 
             // incomeLabel2
             // 
@@ -253,12 +212,8 @@ namespace Wonderprises
             this.Controls.Add(this.expenseGridView);
             this.Controls.Add(this.addExpenseBtn);
             this.Controls.Add(this.expenseDetailsLabel);
-            this.Controls.Add(this.categoriesLabel);
-            this.Controls.Add(this.categoriesComboBox);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.expenseNameLabel);
             this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.incomeNameTextBox);
             this.Controls.Add(this.incomeLabel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Expense";
@@ -270,15 +225,12 @@ namespace Wonderprises
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expenseGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label expenseDetailsLabel;
-        private System.Windows.Forms.Label categoriesLabel;
-        private System.Windows.Forms.ComboBox categoriesComboBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label logout;
         private System.Windows.Forms.Label expenseLabel;
@@ -286,9 +238,7 @@ namespace Wonderprises
         private System.Windows.Forms.Label dashboardLabel;
         private System.Windows.Forms.Label appTitle;
         private System.Windows.Forms.PictureBox icon;
-        private System.Windows.Forms.Label expenseNameLabel;
         private System.Windows.Forms.PictureBox closeButton;
-        private System.Windows.Forms.TextBox incomeNameTextBox;
         private System.Windows.Forms.Label incomeLabel2;
         private System.Windows.Forms.Button addExpenseBtn;
         private System.Windows.Forms.DataGridView expenseGridView;

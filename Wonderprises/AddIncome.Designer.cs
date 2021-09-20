@@ -336,9 +336,24 @@ namespace Wonderprises
             // 
             this.amountTextBox.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.amountTextBox.Location = new System.Drawing.Point(241, 250);
+            this.amountTextBox.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.amountTextBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(200, 22);
             this.amountTextBox.TabIndex = 23;
+            this.amountTextBox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // AddIncome
             // 
