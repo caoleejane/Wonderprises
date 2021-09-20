@@ -23,7 +23,7 @@ namespace Wonderprises
         {
             try {
                 con.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT ExpensesId, ExpensesName, ExpensesCategory, ExpensesDate, ExpensesDesc FROM ExpensesTable WHERE ExpensesUser = '" + Login.userName + "'", con);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT ExpensesName, ExpensesCategory, ExpensesDate, ExpensesDesc FROM ExpensesTable WHERE ExpensesUser = '" + Login.userName + "'", con);
                 SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);

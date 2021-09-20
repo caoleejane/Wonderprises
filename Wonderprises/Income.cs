@@ -24,7 +24,7 @@ namespace Wonderprises
             try
             {
                 con.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT IncomeId, IncomeName, IncomeCategory, IncomeDate, IncomeDesc FROM IncomeTable WHERE IncomeUser = '" + Login.userName + "'", con);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT IncomeName, IncomeCategory, IncomeDate, IncomeDesc FROM IncomeTable WHERE IncomeUser = '" + Login.userName + "'", con);
                 SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
                 DataSet dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
